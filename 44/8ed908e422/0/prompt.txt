@@ -36,3 +36,7 @@ https://connpass.com/about/api/v2/
 ---
 
 git repository の url はわかってるでしょ？
+
+---
+
+コミットしてプッシュ

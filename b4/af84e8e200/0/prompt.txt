@@ -1,0 +1,26 @@
+コミットして
+
+---
+
+さあここから早速実装に取り掛かってほしいです。
+
+connpass api の apikey はどこにおいたらいいですか？
+
+---
+
+./focusconnpass/.env に書きました
+
+あとはよろしく
+
+---
+
+connpass api docs配下です
+https://connpass.com/about/api/v2/
+
+---
+
+.env に書いてます
+
+---
+
+次はおすすめしたイベントにユーザーが参加したいと選択した時に、参加できるように tools を作ってほしい

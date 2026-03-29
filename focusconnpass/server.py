@@ -11,6 +11,7 @@ from focusconnpass.infrastructure.dao.yaml_profile_loader import YamlProfileLoad
 from focusconnpass.tools.fetch_events_tool import register_fetch_events_tool
 from focusconnpass.tools.get_event_detail_tool import register_get_event_detail_tool
 from focusconnpass.tools.get_user_profile_tool import register_get_user_profile_tool
+from focusconnpass.tools.open_event_page_tool import register_open_event_page_tool
 from focusconnpass.usecase.fetch_events import FetchEventsUseCase
 from focusconnpass.usecase.get_event_detail import GetEventDetailUseCase
 
@@ -34,6 +35,7 @@ def _setup() -> None:
     register_fetch_events_tool(mcp, fetch_events_usecase)
     register_get_event_detail_tool(mcp, get_event_detail_usecase)
     register_get_user_profile_tool(mcp, profile_loader)
+    register_open_event_page_tool(mcp, get_event_detail_usecase)
 
 
 _setup()

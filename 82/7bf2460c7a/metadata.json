@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "827bf2460c7a",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "focusconnpass/domain/model/.gitkeep",
+    "focusconnpass/domain/repository/.gitkeep",
+    "focusconnpass/usecase/dto/.gitkeep",
+    "tests/.gitkeep"
+  ],
+  "sessions": [
+    {
+      "metadata": "/82/7bf2460c7a/0/metadata.json",
+      "transcript": "/82/7bf2460c7a/0/full.jsonl",
+      "content_hash": "/82/7bf2460c7a/0/content_hash.txt",
+      "prompt": "/82/7bf2460c7a/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 422,
+    "cache_creation_tokens": 131610,
+    "cache_read_tokens": 2768812,
+    "output_tokens": 34030,
+    "api_call_count": 51
+  }
+}

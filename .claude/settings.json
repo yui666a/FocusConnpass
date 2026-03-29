@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run pytest:*)",
+      "Bash(uv run ruff:*)",
+      "Bash(uv run python -m focusconnpass:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; [[ \"$f\" == *.py ]] && uv run ruff check --fix \"$f\" && uv run ruff format \"$f\"; } 2>/dev/null || true",
+            "statusMessage": "Running ruff..."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.5.1",
+  "checkpoint_id": "d60b6f1f8fe4",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "focusconnpass/infrastructure/__init__.py",
+    "focusconnpass/infrastructure/api/.gitkeep",
+    "focusconnpass/infrastructure/api/__init__.py",
+    "focusconnpass/infrastructure/api/connpass_client.py",
+    "tests/infrastructure/__init__.py",
+    "tests/infrastructure/api/__init__.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d6/0b6f1f8fe4/0/metadata.json",
+      "transcript": "/d6/0b6f1f8fe4/0/full.jsonl",
+      "content_hash": "/d6/0b6f1f8fe4/0/content_hash.txt",
+      "prompt": "/d6/0b6f1f8fe4/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 62,
+    "cache_creation_tokens": 121369,
+    "cache_read_tokens": 1967699,
+    "output_tokens": 30204,
+    "api_call_count": 42
+  }
+}

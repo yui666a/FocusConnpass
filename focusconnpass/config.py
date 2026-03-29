@@ -5,6 +5,11 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+_ENV_PATH = Path(__file__).resolve().parent / ".env"
+load_dotenv(_ENV_PATH)
+
 
 def get_api_key() -> str:
     """Connpass APIキーを環境変数から取得する.

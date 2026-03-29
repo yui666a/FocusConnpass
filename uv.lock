@@ -190,6 +190,7 @@ dependencies = [
     { name = "httpx" },
     { name = "mcp", extra = ["cli"] },
     { name = "pydantic" },
+    { name = "python-dotenv" },
     { name = "pyyaml" },
 ]
 
@@ -207,6 +208,7 @@ requires-dist = [
     { name = "pydantic" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "pytest-asyncio", marker = "extra == 'dev'" },
+    { name = "python-dotenv" },
     { name = "pyyaml" },
     { name = "ruff", marker = "extra == 'dev'" },
 ]

@@ -45,17 +45,22 @@ class ConnpassClient(EventGateway):
             return self._http_client
         return httpx.AsyncClient(headers={"X-API-Key": self._api_key})
 
-    async def fetch_events(self, count: int = 100) -> list[Event]:
+    async def fetch_events(
+        self, count: int = 100, ymd: str | None = None
+    ) -> list[Event]:
         """直近イベントを開催日順で取得する.
 
         Args:
             count: 取得件数(最大100)。
+            ymd: 開催日フィルタ(YYYYMMDD形式)。指定時はその日のイベントのみ取得。
 
         Returns:
             イベントのリスト。
         """
         client = self._get_client()
         params: dict[str, Any] = {"order": 2, "count": count, "start": 1}
+        if ymd:
+            params["ymd"] = ymd
         response = await client.get(BASE_URL, params=params)
         response.raise_for_status()
         data = response.json()

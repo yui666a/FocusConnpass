@@ -27,5 +27,5 @@ class FetchEventsUseCase:
         Returns:
             イベント一覧を含むレスポンス。
         """
-        events = await self._gateway.fetch_events(count=request.count)
+        events = await self._gateway.fetch_events(count=request.count, ymd=request.ymd)
         return FetchEventsResponse(events=events)

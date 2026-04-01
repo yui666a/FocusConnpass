@@ -11,11 +11,14 @@ class EventGateway(ABC):
     """イベント取得ゲートウェイ."""
 
     @abstractmethod
-    async def fetch_events(self, count: int = 100) -> list[Event]:
+    async def fetch_events(
+        self, count: int = 100, ymd: str | None = None
+    ) -> list[Event]:
         """直近イベントを取得する.
 
         Args:
             count: 取得件数(最大100)。
+            ymd: 開催日フィルタ(YYYYMMDD形式)。指定時はその日のイベントのみ取得。
 
         Returns:
             イベントのリスト。

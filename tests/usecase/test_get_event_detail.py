@@ -46,7 +46,9 @@ class FakeEventGateway(EventGateway):
         """初期化."""
         self._events = events
 
-    async def fetch_events(self, count: int = 100) -> list[Event]:
+    async def fetch_events(
+        self, count: int = 100, ymd: str | None = None
+    ) -> list[Event]:
         """イベント一覧を返す."""
         return self._events[:count]
 

@@ -17,7 +17,7 @@ def register_fetch_events_tool(mcp: FastMCP, usecase: FetchEventsUseCase) -> Non
     """
 
     @mcp.tool()
-    async def fetch_events(count: int = 100) -> str:
+    async def fetch_events(count: int = 100, ymd: str | None = None) -> str:
         """直近開催イベントを一括取得する.
 
         connpass APIから直近のイベント一覧を取得します.
@@ -25,10 +25,11 @@ def register_fetch_events_tool(mcp: FastMCP, usecase: FetchEventsUseCase) -> Non
 
         Args:
             count: 取得件数(1-100, デフォルト100).
+            ymd: 開催日フィルタ(YYYYMMDD形式, 例: 20260402).
 
         Returns:
             イベント一覧のJSON文字列.
         """
-        request = FetchEventsRequest(count=count)
+        request = FetchEventsRequest(count=count, ymd=ymd)
         response = await usecase.execute(request)
         return response.model_dump_json()

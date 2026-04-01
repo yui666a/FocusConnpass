@@ -9,6 +9,7 @@ class FetchEventsRequest(BaseModel, frozen=True):
     """イベント一括取得リクエスト."""
 
     count: int = 100
+    ymd: str | None = None
 
 
 class GetEventDetailRequest(BaseModel, frozen=True):

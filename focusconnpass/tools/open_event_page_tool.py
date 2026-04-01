@@ -8,9 +8,7 @@ from focusconnpass.usecase.dto.request import GetEventDetailRequest
 from focusconnpass.usecase.get_event_detail import GetEventDetailUseCase
 
 
-def register_open_event_page_tool(
-    mcp: FastMCP, usecase: GetEventDetailUseCase
-) -> None:
+def register_open_event_page_tool(mcp: FastMCP, usecase: GetEventDetailUseCase) -> None:
     """open_event_page ツールをMCPサーバーに登録する.
 
     Args:

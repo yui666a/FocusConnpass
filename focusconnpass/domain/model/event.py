@@ -11,7 +11,7 @@ class Group(BaseModel, frozen=True):
     """イベント主催グループ."""
 
     id: int
-    subdomain: str
+    subdomain: str | None
     title: str
     url: str
 

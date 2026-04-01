@@ -55,15 +55,14 @@ location: 東京
 uv run python -m focusconnpass
 ```
 
-### Claude Desktop での設定
+### Claude Desktop / Claude Code での設定
 
 ```json
 {
   "mcpServers": {
     "focusconnpass": {
       "command": "uv",
-      "args": ["run", "python", "-m", "focusconnpass"],
-      "cwd": "/path/to/FocusConnpass"
+      "args": ["run", "--directory", "/path/to/FocusConnpass", "python", "-m", "focusconnpass"]
     }
   }
 }
@@ -73,7 +72,7 @@ uv run python -m focusconnpass
 
 | ツール名 | 説明 |
 |---------|------|
-| `fetch_events` | 直近開催イベントを一括取得（最大100件） |
+| `fetch_events` | 直近開催イベントを一括取得（最大100件、`ymd`で日付指定可） |
 | `get_event_detail` | 特定イベントの詳細情報を取得 |
 | `get_user_profile` | ユーザープロフィールを返す |
 | `open_event_page` | イベント参加ページのURLを返す |
@@ -85,7 +84,7 @@ uv run python -m focusconnpass
 
 ホストLLM:
   1. get_user_profile() → プロフィール取得
-  2. fetch_events(count=100) → 直近100件取得
+  2. fetch_events(count=100, ymd="20260402") → 指定日のイベント取得
   3. プロフィール × イベント群 を自身で判断 → 上位N件を推薦理由付きで回答
 
 ユーザー: 「2番目のイベントに参加したい」

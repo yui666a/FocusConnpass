@@ -1,0 +1,19 @@
+focusconnpass mcp　で明日のイベントそ調べて
+
+---
+
+<task-notification>
+<task-id>b23y4iylf</task-id>
+<tool-use-id>toolu_01HwnguQDwmeokTqgCrWNN8u</tool-use-id>
+<output-file>/private/tmp/claude-502/-Users-h-aiso-Projects-FocusConnpass/21edf329-2e27-4f79-97cb-2e1918cab122/tasks/b23y4iylf.output</output-file>
+<status>completed</status>
+<summary>Background command "Try to find API key" completed (exit code 0)</summary>
+</task-notification>
+
+---
+
+もう一回mcpを試してみたい。
+
+---
+
+しました

@@ -1,0 +1,16 @@
+他のディレクトリでmcpに繋げようとしたら、繋がりませんでした。
+
+│ Focusconnpass MCP Server                                                                                                                                                     │
+│                                                                                                                                                                              │
+│ Status: ✘ failed                                                                                                                                                             │
+│ Command: uv                                                                                                                                                                  │
+│ Args: run python -m focusconnpass                                                                                                                                            │
+│ Config location: /Users/h.aiso/.claude.json                                                                                                                                  │
+│                                                                                                                                                                              │
+│ ❯ 1. Reconnect                                                                                                                                                               │
+│   2. Disable                                                                                                                                                                 │
+
+---
+
+できたわ。
+必要だったらREADMEを更新して

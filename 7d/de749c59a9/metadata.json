@@ -3,7 +3,7 @@
   "checkpoint_id": "7dde749c59a9",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 4,
+  "checkpoints_count": 5,
   "files_touched": [
     "focusconnpass/domain/model/event.py",
     "focusconnpass/tools/open_event_page_tool.py"
@@ -14,13 +14,19 @@
       "transcript": "/7d/de749c59a9/0/full.jsonl",
       "content_hash": "/7d/de749c59a9/0/content_hash.txt",
       "prompt": "/7d/de749c59a9/0/prompt.txt"
+    },
+    {
+      "metadata": "/7d/de749c59a9/1/metadata.json",
+      "transcript": "/7d/de749c59a9/1/full.jsonl",
+      "content_hash": "/7d/de749c59a9/1/content_hash.txt",
+      "prompt": "/7d/de749c59a9/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 215,
-    "cache_creation_tokens": 374914,
-    "cache_read_tokens": 4094824,
-    "output_tokens": 17484,
-    "api_call_count": 73
+    "input_tokens": 709,
+    "cache_creation_tokens": 915135,
+    "cache_read_tokens": 12484502,
+    "output_tokens": 60601,
+    "api_call_count": 178
   }
 }
